@@ -3,7 +3,7 @@ import React, { Fragment, useState, useEffect } from "react";
 import CriarTarefa from "../../components/criarTarefa/Principal";
 import ListarTarefa from "../../components/listarTarefa/Principal";
 import { addTask, alterTask, deleteTask, listTask } from "../../controllers/taskController";
-import { Task } from "../../models/taskModel";
+import "../tarefa/style.css"
 
 
 const Principal = () => {
@@ -44,7 +44,10 @@ const Principal = () => {
     }, [])
 
     return(
-        <div>
+        <div className="cont">
+            <div className="text">
+                <p>Lista de tarefas</p>
+            </div>
             <CriarTarefa criarTarefa={addTarefa}/>
             <ListarTarefa listaTarefa={listaTarefas} alteraTarefa={altTarefa} excluirTarefa={deleteTarefa}/>
         </div> 

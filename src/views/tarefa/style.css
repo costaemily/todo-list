@@ -1,0 +1,18 @@
+.cont{
+    width: 500px;
+    height: 500px;
+    background-color: bisque;
+    margin-top: 50px;
+    margin-left: 100px;
+    justify-content: center;
+    border-radius: 20px;
+}
+
+.text{
+    width: 200px;
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: medium;
+    font-weight: bold;
+    margin-left: 150px;
+}
