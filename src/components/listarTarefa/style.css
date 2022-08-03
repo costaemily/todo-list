@@ -1,0 +1,22 @@
+.itemFeito{
+    text-decoration: line-through;
+    font-style: italic;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.itemNormal{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.box {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.listaItens{
+    height: 30px;
+    width: 300px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+}
