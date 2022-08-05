@@ -20,16 +20,15 @@ const CriarTarefa = ( {criarTarefa} ) => {
     return(
         <Fragment>
             <div className="box">
-                <div className="itens">
-                    <input placeholder="Adicione uma tarefa" type="text" value={tarefa} onChange={(e) => setTarefa(e.target.value)}></input>
+                <div className="input-group mb-3">
+                    <input type="text" className="form-control" placeholder="Add a new task ..." 
+                        aria-label="Add a new task ..." aria-describedby="button-addon2"
+                        value={tarefa} onChange={(e) => setTarefa(e.target.value)}/>
+                    <div className="input-group-append">
+                        <button className="btn btn-outline-secondary" type="button" id="button-addon2"
+                            onClick={(() => adicionarTarefa(data, tarefa))}>+</button>
+                    </div>
                 </div>
-                <div className="itens">
-                    <input type="date" value={data} onChange={(e) => setData(e.target.value)}></input>
-                </div>
-                <div className="itens">
-                    <FaPlus onClick={(() => adicionarTarefa(data, tarefa))}/>
-                </div>
-                
             </div>
         </Fragment>
     )

@@ -2,9 +2,19 @@
     text-decoration: line-through;
     font-style: italic;
     font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-direction: row;
+    text-align: center;
 }
 .itemNormal{
     font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-direction: row;
+    text-align: center;
 }
 
 .box {
@@ -19,4 +29,12 @@
     display: flex;
     justify-content: space-between;
     flex-direction: row;
+}
+
+.item{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
 }

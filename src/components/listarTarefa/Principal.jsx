@@ -22,13 +22,16 @@ const ListarTarefa = ( {listaTarefa, alteraTarefa, excluirTarefa} ) => {
                                 return(                                 
                                     <div key={tarefa[1].id} className="listaItens">
                                         
-                                        <div>
+                                        <div className="item">
                                             <input type="checkbox" checked={tarefa[1].done['stringValue'] == "False" ? false : true} 
                                                     onChange={() => alteraTarefa(tarefa[1].id, tarefa[1].dateTask['stringValue'], tarefa[1].done['stringValue'], tarefa[1].task['stringValue'], "done")}/>
                                         </div>
-                                        <div className={tarefa[1].done['stringValue'] == "True" ? "itemFeito" : "itemNormal"}>{tarefa[1].task['stringValue']}</div>
-                                        <div>{tarefa[1].dateTask['stringValue']}</div> 
-                                        <div>
+                                        <div className={tarefa[1].done['stringValue'] == "True" ? "itemFeito" : "itemNormal"}>
+                                            <div>
+                                                {tarefa[1].task['stringValue']}
+                                            </div>
+                                        </div>
+                                        <div className="item">
                                             <FaEdit onClick={() => mostarAlerta(tarefa[1].id, tarefa[1].dateTask['stringValue'], tarefa[1].done['stringValue'], tarefa[1].task['stringValue'])}/>
                                             <FaTrashAlt onClick={() => excluirTarefa(tarefa[1].id)}/>
                                         </div>        

@@ -46,7 +46,7 @@ const Principal = () => {
     return(
         <div className="cont">
             <div className="text">
-                <p>Lista de tarefas</p>
+                <p>TO-DO LIST</p>
             </div>
             <CriarTarefa criarTarefa={addTarefa}/>
             <ListarTarefa listaTarefa={listaTarefas} alteraTarefa={altTarefa} excluirTarefa={deleteTarefa}/>

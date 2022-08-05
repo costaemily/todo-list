@@ -1,7 +1,7 @@
 .box {
-    display: flex;
+    width: 350px;
     justify-content: center;
-    margin-top: 10px;
+    margin-left: 70px;
 }
 .itens{
     margin: 10px;
